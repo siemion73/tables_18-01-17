@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Форми</title>
+	</head>
+	<body bgcolor="#99C122">
+		<h1 align="center">Приклад форми реєстрації</h1>
+		<form method="post" action="https://formspree.io/c-tel@ukr.net">
+			<label><tt><b>Прізвище:&nbsp;</b></tt><input type="text" name="surname" size="25" maxlength="20" required></label>
+			<br><br>
+			<label><tt><b>Ім'я:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></tt><input type="text" name="name" size="25" maxlength="20" required></label>
+			<br><br>
+			<label><tt><b>Email:&nbsp;&nbsp;&nbsp;&nbsp;</b></tt><input type="email" name="email" size="25" maxlength="20" required></label>
+			<br><br>
+			<label><tt><b>Логін:&nbsp;&nbsp;&nbsp;&nbsp;</b></tt><input type="text" name="login" size="25" maxlength="20" required></label>
+			<br><br>
+			<label><tt><b>Пароль:&nbsp;&nbsp;&nbsp;</b></tt><input type="password" name="password" size="25" maxlength="20" required></label>
+			<br><br>
+			<label><tt><b>Стать:</b></tt></label>
+				<input type="radio" name="sex" value="male" checked>Чоловіча
+				<input type="radio" name="sex" value="femaile">Жіноча
+			<br><br>
+			<label><tt><b>Відомості про родину:</b></tt><br><br></label>
+				<input type="checkbox" name="marital status[]" value="maried" checked>Одружений/на<br>
+				<input type="checkbox" name="marital status[]" value="child">Є діти<br>
+				<input type="checkbox" name="marital status[]" value="widower">Є родичі на утриманні<br>
+				<input type="checkbox" name="marital status[]" value="single">Є домашні тварини
+			<br><br>
+			<label><tt><b>Освіта:&nbsp;&nbsp;&nbsp;</b></tt>
+				<select name="education">
+					<option value="highschool">Середня</option>
+					<option value="vocational">Спеціальна</option>
+					<option value="university">Вища</option>
+				</select>
+			</label>
+			<br><br>
+			<label><tt><b>Додайте щось просебе:</b></tt></label>
+				<br><br>
+				<textarea name="pole1" cols="40" rows="10"></textarea>
+			<br><br>
+			<label><tt><b>Додати резюме:</b></tt>&emsp;<input type="file" name="user_file"></label>
+			<br><br>
+			&emsp;&emsp;&emsp;&emsp;<input type="reset" value="Очистити">&emsp;<input type="submit" name="agree" value="Відправити">
+		</form>
+	</body>
+</html>
